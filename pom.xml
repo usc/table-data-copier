@@ -144,6 +144,9 @@
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>
+								<configuration>
+                                    <includePom>true</includePom>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
