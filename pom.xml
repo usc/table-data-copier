@@ -7,9 +7,15 @@
         <version>7</version>
     </parent>
 
+<<<<<<< HEAD
     <groupId>com.github.usc</groupId>
     <artifactId>table-data-copier</artifactId>
     <version>0.3-SNAPSHOT</version>
+=======
+    <groupId>com.googlecode.usc</groupId>
+    <artifactId>table-data-copier</artifactId>
+    <version>0.5-SNAPSHOT</version>
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
     <packaging>jar</packaging>
     <name>table-data-copier</name>
     <description>copy table's data from one database to another database(same table schema)</description>
@@ -22,9 +28,15 @@
         </license>
     </licenses>
     <scm>
+<<<<<<< HEAD
         <connection>scm:git:git@github.com:usc/table-data-copier.git</connection>
         <developerConnection>scm:git:git@github.com:usc/table-data-copier.git</developerConnection>
         <url>git@github.com:usc/table-data-copier.git</url>
+=======
+        <connection>scm:svn:http://table-data-copier.googlecode.com/svn/trunk/</connection>
+        <developerConnection>scm:svn:https://table-data-copier.googlecode.com/svn/trunk</developerConnection>
+        <url>http://code.google.com/p/table-data-copier/</url>
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
     </scm>
     <developers>
         <developer>
@@ -33,7 +45,11 @@
             <url>http://blogjava.net/lishunli</url>
             <email>lishunli.me@gmail.com</email>
             <organization>USC</organization>
+<<<<<<< HEAD
             <organizationUrl>https://github.com/usc</organizationUrl>
+=======
+            <organizationUrl>http://code.google.com/p/usc/</organizationUrl>
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
             <timezone>+8</timezone>
             <roles>
                 <role>Owner</role>
@@ -56,7 +72,11 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+<<<<<<< HEAD
             <version>5.1.17</version>
+=======
+            <version>5.1.18</version>
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
         </dependency>
 
         <dependency>
@@ -68,19 +88,31 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
+<<<<<<< HEAD
             <version>1.6.2</version>
+=======
+            <version>1.6.4</version>
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
         </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
+<<<<<<< HEAD
             <version>1.6.2</version>
+=======
+            <version>1.6.4</version>
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+<<<<<<< HEAD
             <version>4.9</version>
+=======
+            <version>4.10</version>
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -116,11 +148,27 @@
 
             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
+<<<<<<< HEAD
                 <version>2.0-beta-9</version>
                 <configuration>
                     <mavenExecutorId>forked-path</mavenExecutorId>
                 </configuration>
             </plugin>
+=======
+                <version>2.0-beta-8</version>
+                <configuration>
+                    <tagBase>https://table-data-copier.googlecode.com/svn/tags/</tagBase>
+                    <branchBase>https://table-data-copier.googlecode.com/svn/branches/</branchBase>
+                    <mavenExecutorId>forked-path</mavenExecutorId>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>1.2</version>
+            </plugin>
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
         </plugins>
     </build>
 
@@ -144,9 +192,12 @@
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>
+<<<<<<< HEAD
 								<configuration>
                                     <includePom>true</includePom>
                                 </configuration>
+=======
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
                             </execution>
                         </executions>
                     </plugin>
@@ -228,7 +279,11 @@
                                     <icon>${basedir}/src/main/resources/dataCopier.ico</icon>
 
                                     <jre>
+<<<<<<< HEAD
                                         <minVersion>1.5.0</minVersion>
+=======
+                                        <minVersion>1.6.0</minVersion>
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
                                     </jre>
 
                                     <versionInfo>

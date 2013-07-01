@@ -25,10 +25,15 @@ public class Utils {
         return true;
     }
 
+<<<<<<< HEAD
     public static String buildInsertSql(Set<String> columnNames, String criteria) {
         int indexOfWhere = criteria.toLowerCase().indexOf("where");
 
         StringBuffer insertSql = new StringBuffer("INSERT INTO " + (indexOfWhere != -1 ? criteria.substring(0, indexOfWhere) : criteria) + "(");
+=======
+    public static String buildInsertSql(Set<String> columnNames, String tableName) {
+        StringBuffer insertSql = new StringBuffer("INSERT INTO " + tableName + " (");
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
         insertSql.append(buildParams(columnNames, ""));
         insertSql.append(") VALUES (");
         insertSql.append(buildParams(columnNames, ":"));

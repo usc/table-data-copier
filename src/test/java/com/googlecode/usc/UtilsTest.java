@@ -37,12 +37,18 @@ public class UtilsTest {
     }
 
     @Test
+<<<<<<< HEAD
     public void testBuildInsertSqlNoWhereStatement() {
         String criteria = "student";
+=======
+    public void testBuildInsertSql() {
+        String tableName = "student";
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
         Set<String> columnNames = new HashSet<String>();
         columnNames.add("name");
         columnNames.add("age");
 
+<<<<<<< HEAD
         assertEquals("INSERT INTO student(age, name) VALUES (:age, :name)", Utils.buildInsertSql(columnNames, criteria).toString().trim());
     }
 
@@ -54,6 +60,9 @@ public class UtilsTest {
         columnNames.add("age");
 
         assertEquals("INSERT INTO student (age, name) VALUES (:age, :name)", Utils.buildInsertSql(columnNames, criteria).toString().trim());
+=======
+        assertEquals("INSERT INTO student (age, name) VALUES (:age, :name)", Utils.buildInsertSql(columnNames, tableName).toString().trim());
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
     }
 
     @Test
@@ -107,7 +116,10 @@ public class UtilsTest {
         assertNull(prop.get("version"));
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
     @Test
     public void testLoadPropertiesFileByPathAndStreamNormal() {
         Properties config = Utils.loadPropertiesFile(
