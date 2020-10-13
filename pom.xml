@@ -109,7 +109,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
 <<<<<<< HEAD
-            <version>4.9</version>
+            <version>4.13.1</version>
 =======
             <version>4.10</version>
 >>>>>>> 4716c4ec1356a0fc9f9360b8a6cc28aba72dc344
